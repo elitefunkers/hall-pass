@@ -1,0 +1,15 @@
+{
+  "name": "hall-pass",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hall Pass dating app. The Expo app lives in apps/mobile; these scripts forward to it.",
+  "scripts": {
+    "setup": "npm --prefix apps/mobile install",
+    "start": "npm --prefix apps/mobile run start --",
+    "web": "npm --prefix apps/mobile run web --",
+    "android": "npm --prefix apps/mobile run android --",
+    "ios": "npm --prefix apps/mobile run ios --",
+    "test": "npm --prefix apps/mobile test --",
+    "typecheck": "npm --prefix apps/mobile run typecheck"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "hall-pass-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Narrowly scoped MCP server for Hall Pass. Acts only as the signed-in user; every write is audited.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "hall-pass-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "login": "node dist/auth/login.js",
+    "logout": "node dist/auth/logout.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "@supabase/supabase-js": "^2.118.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "~6.0.3"
+  }
+}
